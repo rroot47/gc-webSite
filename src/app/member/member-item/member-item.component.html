@@ -1,0 +1,22 @@
+<tr *ngFor="let member in members">
+  <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm sm:pl-6">
+    <div class="flex items-center">
+      <div class="ml-4">
+        <div class="font-medium text-gray-900">{{ member.firstName }}</div>
+      </div>
+    </div>
+  </td>
+  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+    <div class="text-gray-900">{{ member.lastName }}</div>
+  </td>
+  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+    <div class="text-gray-900">{{ member.phone }}</div>
+  </td>
+  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ member.domicile }}</td>
+  <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ member.totalMount+'£' }}</td>
+  <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+    <button (click)="onViewMember(0)">
+      <img class="h-6 w-6" src="assets/Icon awesome-eye.svg" alt="hocoulou">
+    </button>
+  </td>
+</tr>
