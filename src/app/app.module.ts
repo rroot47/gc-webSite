@@ -10,12 +10,12 @@ import { ZfooterComponent } from './zfooter/zfooter.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentHomeComponent } from './content-home/content-home.component';
 import { MemberComponent } from './member/member.component';
-import {ClientService} from "./services/client.service";
 import { SignupComponent } from './signup/signup.component';
 import {HttpClientModule} from "@angular/common/http";
-import { MemberListComponent } from './member/member-list/member-list.component';
-import { MemberItemComponent } from './member/member-item/member-item.component';
-import {MemberService} from "./services/member.service";
+import { DebtComponent } from './debt/debt.component';
+import { NavAdminComponent } from './nav-admin/nav-admin.component';
+import { FormMemberComponent } from './form-member/form-member.component';
+import { ExpenseComponent } from './expense/expense.component';
 
 @NgModule({
   declarations: [
@@ -27,8 +27,10 @@ import {MemberService} from "./services/member.service";
     ContentHomeComponent,
     MemberComponent,
     SignupComponent,
-    MemberListComponent,
-    MemberItemComponent
+    DebtComponent,
+    NavAdminComponent,
+    FormMemberComponent,
+    ExpenseComponent
   ],
   imports: [
     BrowserModule,

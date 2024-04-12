@@ -31,11 +31,10 @@ export class SigninComponent {
   signIn(){
     const email = this.signInForm.get('email').value;
     const password = this.signInForm.get('password').value;
-    console.log(email)
     this.clientService.signIn(email, password).subscribe(
       (data:any)=>{
         localStorage.setItem("isAuth",String(true));
-        this.router.navigate(['/members'])
+        this.router.navigate(['/admin/members'])
       });
   }
 }
